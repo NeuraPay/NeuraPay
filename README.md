@@ -31,10 +31,10 @@ It enables intelligent systems to request, charge, and verify payments autonomou
 
 Install via pip:
 
-bash
+```bash
 pip install neurapay
 
-#Example Usage:
+# Example Usage (Python)
 from neurapay import Client
 
 client = Client(api_key="your-api-key")
@@ -47,6 +47,8 @@ payment = client.create_payment(
 )
 
 print(payment.status)
+```
+
 
 #  🧩 JavaScript SDK (Beta)
 npm install neurapay
@@ -112,6 +114,7 @@ Licensed under the MIT License — free to use, modify, and distribute.
 
 # 💜 Credits
 Developed by the x402 Labs Team — powering the next generation of the Machine Economy.
+
 
 
 
