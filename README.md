@@ -31,7 +31,7 @@ It enables intelligent systems to request, charge, and verify payments autonomou
 
 Install via pip:
 
-```bash
+bash
 pip install neurapay
 
 #Example Usage:
@@ -112,4 +112,5 @@ Licensed under the MIT License — free to use, modify, and distribute.
 
 # 💜 Credits
 Developed by the x402 Labs Team — powering the next generation of the Machine Economy.
+
 
