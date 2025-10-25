@@ -48,7 +48,7 @@ payment = client.create_payment(
 
 print(payment.status)
 
-#🧩 JavaScript SDK (Beta)
+#  🧩 JavaScript SDK (Beta)
 npm install neurapay
 
 #Example Usage:
@@ -112,6 +112,7 @@ Licensed under the MIT License — free to use, modify, and distribute.
 
 # 💜 Credits
 Developed by the x402 Labs Team — powering the next generation of the Machine Economy.
+
 
 
 
