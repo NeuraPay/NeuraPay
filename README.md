@@ -65,7 +65,7 @@ const payment = await client.createPayment({
 
 console.log(payment.status);
 
-#Architecture:
+# Architecture:
 neurapay/
 ├── sdk/
 │   ├── python/
@@ -112,5 +112,6 @@ Licensed under the MIT License — free to use, modify, and distribute.
 
 # 💜 Credits
 Developed by the x402 Labs Team — powering the next generation of the Machine Economy.
+
 
 
