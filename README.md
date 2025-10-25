@@ -54,7 +54,7 @@ print(payment.status)
 npm install neurapay
 
 #Example Usage:
-import { NeuraPay } from "neurapay";
+```import { NeuraPay } from "neurapay";
 
 const client = new NeuraPay("your-api-key");
 
@@ -66,9 +66,10 @@ const payment = await client.createPayment({
 });
 
 console.log(payment.status);
+```
 
 # Architecture:
-neurapay/
+```neurapay/
 ├── sdk/
 │   ├── python/
 │   └── javascript/
@@ -80,6 +81,7 @@ neurapay/
 └── examples/
     ├── ai_agent_payment.py
     └── autonomous_transfer.js
+```
 
 # 🧠 How It Works
     1. Agents connect to NeuraPay via SDKs or APIs.
@@ -89,12 +91,13 @@ neurapay/
 
 # 🧩 API Reference (Summary)
 
-| Endpoint          | Description                       | Method |
+```| Endpoint          | Description                       | Method |
 | ----------------- | --------------------------------- | ------ |
 | `/create_payment` | Create a new AI-to-AI transaction | `POST` |
 | `/check_status`   | Retrieve transaction status       | `GET`  |
 | `/balance`        | Check wallet balance              | `GET`  |
 | `/verify_agent`   | Validate an AI agent identity     | `POST` |
+```
 
 # 🛠 Tech Stack
 
@@ -114,6 +117,7 @@ Licensed under the MIT License — free to use, modify, and distribute.
 
 # 💜 Credits
 Developed by the x402 Labs Team — powering the next generation of the Machine Economy.
+
 
 
 
