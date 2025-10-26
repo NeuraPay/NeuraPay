@@ -1,0 +1,50 @@
+{
+  "x402Version": 1,
+  "accepts": [
+    {
+      "scheme": "exact",
+      "network": "solana",
+      "maxAmountRequired": "0.1",
+      "resource": "/api/create_payment",
+      "description": "Create an AI-to-AI payment using NeuraPay's x402 protocol.",
+      "mimeType": "application/json",
+      "payTo": "GBdNzBc4c1HSgJyyo2WGBusVY693vvUR2zuC1NKW3Ae1",
+      "maxTimeoutSeconds": 60,
+      "asset": "SOL",
+      "outputSchema": {
+        "input": {
+          "type": "http",
+          "method": "POST",
+          "bodyType": "json",
+          "bodyFields": {
+            "recipient": {
+              "type": "string",
+              "required": true,
+              "description": "Recipient wallet address"
+            },
+            "amount": {
+              "type": "number",
+              "required": true,
+              "description": "Amount of SOL to send"
+            },
+            "memo": {
+              "type": "string",
+              "required": false,
+              "description": "Optional payment note"
+            }
+          }
+        },
+        "output": {
+          "status": "string",
+          "txHash": "string"
+        }
+      },
+      "extra": {
+        "provider": "NeuraPay",
+        "docs": "https://github.com/neurapay/neurapay",
+        "demo": "https://neurapay.vercel.app",
+        "version": "0.1.0"
+      }
+    }
+  ]
+}

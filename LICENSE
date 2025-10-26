@@ -1,0 +1,23 @@
+
+---
+
+### 🧰 **Sample SDK Snippet (Python)**  
+`sdk/python/client.py`
+```python
+class Client:
+    def __init__(self, api_key, network="solana"):
+        self.api_key = api_key
+        self.network = network
+
+    def create_payment(self, recipient, amount, token="USDC", memo=None):
+        print(f"Creating payment → {amount} {token} to {recipient}")
+        return {
+            "status": "402 Payment Required",
+            "tx_url": f"https://{self.network}.explorer/tx/demo",
+            "amount": amount,
+            "token": token
+        }
+
+    def verify_transaction(self, tx_hash):
+        print(f"Verifying {tx_hash} ... confirmed ✅")
+        return {"status": "confirmed", "tx_hash": tx_hash}
