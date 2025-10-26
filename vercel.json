@@ -1,23 +1,9 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "neurapay-x402-server/index.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "FRONTEND/next.config.js",
-      "use": "@vercel/next"
-    }
+    { "src": "public/**", "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "neurapay-x402-server/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "FRONTEND/$1"
-    }
+    { "src": "/(.*)", "dest": "/public/$1" }
   ]
 }
